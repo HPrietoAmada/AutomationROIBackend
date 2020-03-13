@@ -1,6 +1,6 @@
 'use strict';
 
-var Model = require('../models/model.js');
+var Model = require('../models/homeModel.js');
 
 exports.get = function (req, res) {
 	Model.get(req.params.param1, function (err, data) {

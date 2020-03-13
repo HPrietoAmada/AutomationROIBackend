@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = function (app) {
-	var model = require('../controllers/controller');
+	var model = require('../controllers/homeController');
+
+	app.route('/')
+		.get(home.index);
 
 	app.route('/route_name')
 		.post(model.create);
