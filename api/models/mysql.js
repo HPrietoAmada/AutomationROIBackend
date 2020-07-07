@@ -1,6 +1,7 @@
 const mysql = require('mysql');
 
 console.log("IsDeployed: ", process.env.DEPLOYED === "true");
+console.log("Connection Name: ", process.env.MYSQL_HOST);
 
 // GCP Production connection configuration
 var connection;
@@ -33,6 +34,7 @@ if (process.env.DEPLOYED && process.env.DEPLOYED === "true") {
 connection.connect(function (err) {
 	if (err) {
 		console.log('Error connection: ' + err.stack);
+		console.log(JSON.stringify(err));
 		return;
 	}
 	console.log('Connected as thread id: ' + connection.threadId);

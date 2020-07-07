@@ -1,7 +1,7 @@
 {
-  "name": "backendtemplatenodejs",
+  "name": "AutomationROIBackend",
   "version": "1.0.0",
-  "description": "Template Project to be utilized by for all Amada Backend APIs connected to Google Cloud Platform",
+  "description": "Automation ROI Application used to compare LSU vs. Single Pallet App",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

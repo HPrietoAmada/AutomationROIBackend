@@ -7,7 +7,11 @@ var Model = function (obj) {
 };
 
 Model.index = function (res) {
-	res(null, '<h1>Template API Home</h1>');
+	res(null, '<h1>Amada Alert API</h1>');
+};
+
+Model.view = function (view, res) {
+	res(null, '/../views/' + view);
 };
 
 Model.get = function (id, result) {
